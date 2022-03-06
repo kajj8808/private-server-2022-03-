@@ -9,8 +9,8 @@ import Link from "next/link";
 } */
 
 export default function video_streaming({ id, title }) {
-  const videoSource = `http://${process.env.VIDEO_SERVER_IP}:3000/${id}/output.m3u8`;
-  console.log(videoSource)
+  const videoSource = `http://123.215.130.240:3000/${id}/output.m3u8`;
+
   return (
     <div className="bg-black">
       <div className="absolute left-10 top-12 z-20 flex items-center ">
