@@ -9,10 +9,10 @@ import Link from "next/link";
 } */
 
 export default function video_streaming({ id, title }) {
-  const videoSource = `http://123.215.130.240:3000/${id}/output.m3u8`;
+  const videoSource = `https://shirabii.tk:3000/${id}/output.m3u8`;
 
   return (
-    <div className="bg-black">
+    <div className="bg-black h-screen">
       <div className="absolute left-10 top-12 z-20 flex items-center ">
         <Link href="/">
           <a>
@@ -20,7 +20,7 @@ export default function video_streaming({ id, title }) {
           </a>
         </Link>
       </div>
-      <header className="absolute top-5 z-10 w-screen text-center ">
+      <header className="absolute top-12 z-10 w-screen text-center ">
         <div>
           <span className="text-xl font-bold text-white  duration-300  hover:ease-in ">
             {title}
@@ -32,7 +32,7 @@ export default function video_streaming({ id, title }) {
         url={videoSource}
         playing={true}
         width={"100%"}
-        height={"100vh"}
+        height={"90vh"}
         controls
       />
     </div>
