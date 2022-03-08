@@ -11,9 +11,7 @@ const Home: NextPage = () => {
   };
   return (
     <div className="flex flex-col items-center gap-4 bg-[#181818] py-2 px-4">
-      <div>
-      
-      </div>
+      <div></div>
       {[
         {
           id: "1646150097014",
@@ -127,10 +125,10 @@ const Home: NextPage = () => {
         <div
           key={index}
           className="flex w-full cursor-pointer rounded-b-sm border-b border-[#404040] py-6 px-5 md:w-[722px]"
-          onClick={() => onClick(item.id, `${index}화 ${item.title}`)}
+          onClick={() => onClick(item.id, `${index + 1}화 ${item.title}`)}
         >
           <span className="mr-3 flex items-center text-lg text-white">
-            {index}
+            {index + 1}
           </span>
           <div className="flex h-20 w-36 items-center justify-center bg-transparent">
             <Image
