@@ -9,7 +9,7 @@ import Link from "next/link";
 } */
 
 export default function video_streaming({ id, title }) {
-  const videoSource = `https://localhost:3000/${id}/output.m3u8`;
+  const videoSource = `https://shirabii.tk:3000/${id}/output.m3u8`;
 
   return (
     <div className="h-screen bg-black">
