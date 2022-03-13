@@ -92,7 +92,7 @@ const Home: NextPage = () => {
           poster: "/5UvxFzLy40MGDue1fvTDFmz2WNj.jpg",
         },
         {
-          id: "1646150253382",
+          id: "1646150258505",
           title: "상현의 혈귀를 쓰러뜨리면",
           subType: "ass",
           description:
@@ -102,7 +102,7 @@ const Home: NextPage = () => {
           poster: "/8qmQglGIAYFk3cPGONQrr3EpxQ7.jpg",
         },
         {
-          id: "1646150258505",
+          id: "1646150263681",
           title: "절대 포기하지 않아",
           subType: "ass",
           description:
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
           poster: "/9vq4YJdsQ53D4CqQQumRHg6gLgg.jpg",
         },
         {
-          id: "1646150263681",
+          id: "1646150270186",
           title: "몇 번을 다시 태어나도",
           subType: "ass",
           description:
@@ -121,6 +121,17 @@ const Home: NextPage = () => {
           runTime: "23분",
           poster: "/rO0yt4BIcSZRuIwPlK0QsyhjPZ3.jpg",
         },
+        {
+          id: "123",
+          title: "test",
+          subType: "ass",
+          description:
+            "필터넣은거 테스트",
+          uploadDate: "2022-03-05",
+          runTime: "23분",
+          poster: "/rO0yt4BIcSZRuIwPlK0QsyhjPZ3.jpg",
+        },
+       
       ].map((item, index) => (
         <div
           key={index}

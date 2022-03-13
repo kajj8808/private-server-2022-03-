@@ -9,10 +9,10 @@ import Link from "next/link";
 } */
 
 export default function video_streaming({ id, title }) {
-  const videoSource = `https://shirabii.tk:3000/${id}/output.m3u8`;
+  const videoSource = `https://localhost:3000/${id}/output.m3u8`;
 
   return (
-    <div className="bg-black h-screen">
+    <div className="h-screen bg-black">
       <div className="absolute left-10 top-12 z-20 flex items-center ">
         <Link href="/">
           <a>
@@ -34,12 +34,14 @@ export default function video_streaming({ id, title }) {
         width={"100%"}
         height={"90vh"}
         controls
+        onProgress={(progress) => console.log(progress)}
       />
     </div>
   );
 }
 
 export async function getServerSideProps({ params: { params } }) {
+  // 정상적으로 title 이런 것이 데이터로 들어오지 않았을때, ery처리 를 하고 404? 혹은 잘못된 페이지 입니다 를 error 로만들기 .. 플렌
   try {
     const [id, title] = params;
     return { props: { id, title } };
